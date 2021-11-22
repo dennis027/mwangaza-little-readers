@@ -24,6 +24,7 @@ import { MatCardModule} from '@angular/material/card';
 import { MatSliderModule } from '@angular/material/slider';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,10 @@ import { MatSliderModule } from '@angular/material/slider';
   schemas: [NO_ERRORS_SCHEMA],
   exports: [
     MatTabsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
   ],
  
   providers: [], 

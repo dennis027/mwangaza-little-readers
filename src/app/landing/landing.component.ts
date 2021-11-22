@@ -20,6 +20,8 @@ export class LandingComponent implements OnInit {
     config.keyboard = false;
     config.pauseOnHover = false;
   }
+  public onToggleSidenav = () => { 
+  }
 
   ngOnInit(): void {
   }
