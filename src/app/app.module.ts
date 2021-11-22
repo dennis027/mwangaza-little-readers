@@ -22,6 +22,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule} from '@angular/material/card'; 
 import { MatSliderModule } from '@angular/material/slider';
+import { TesterComponent } from './tester/tester.component';
 
 
 
@@ -35,6 +36,7 @@ import { MatSliderModule } from '@angular/material/slider';
     JoinUsComponent,
     ContactUsComponent,
     FooterComponent,
+    TesterComponent,
 
   ], 
   imports: [ 

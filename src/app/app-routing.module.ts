@@ -8,7 +8,7 @@ import {JoinUsComponent} from './join-us/join-us.component'
 import {ProjectsComponent} from './projects/projects.component'
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import {FooterComponent} from './footer/footer.component';
-
+import{TesterComponent} from './tester/tester.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'navbar',component:NavbarComponent},
@@ -17,6 +17,7 @@ const routes: Routes = [
   {path:'projects',component:ProjectsComponent},
   {path:'contact',component:ContactUsComponent},
   {path:'footer',component:FooterComponent},
+  {path:'test', component:TesterComponent},
 
 ];
 

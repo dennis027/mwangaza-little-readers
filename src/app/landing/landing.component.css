@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
+
 
 .land{
     background-image: url("https://ww2.kqed.org/app/uploads/sites/23/2017/03/iStock-506062932-1020x724.jpg");
@@ -172,5 +173,36 @@ body {
 
 #phases{
   font-family: 'Architects Daughter', cursive;
+font-family: 'Courgette', cursive;
+  background-color: #e4e1cf;
+}
+.mat2{
+  background-color: rgba(244, 246, 216, 0.8) ;
 }
 
+
+@keyframes chainReaction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.over #one {
+  animation: chainReaction 6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+ 
+  font-weight: lighter;
+}
+
+.over #one:nth-child(1) {
+  animation-delay: 3s;
+}
+
+.over #one:nth-child(2) {
+  animation-delay: 2s;
+}

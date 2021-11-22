@@ -10,12 +10,6 @@
   }
   
   
-  /*div p {
-    animation: chainReaction 2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-  }*/
-  
   .parallax-window .welcome-page-div {
     animation: chainReaction 3s;
     opacity: 0;
@@ -37,8 +31,3 @@
   
   /*WindowOnload Fade-In*/
 
-  footer {
-    position:absolute;
-    bottom:0;
-    width: 100%;
-    }
