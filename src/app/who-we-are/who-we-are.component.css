@@ -1,0 +1,17 @@
+.background{
+    background-image: url("https://kidspalace.co.ke/gallery/images/kp20.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#one{
+    font-family: 'Satisfy', cursive;
+    color:yellow;
+    font-size:550%;
+}
+.over{
+    background: rgba(33, 49, 63, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}

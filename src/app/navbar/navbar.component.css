@@ -6,6 +6,12 @@ mat-sidenav {
     width: 250px;
 }
 
-main {
-    padding: 10px;
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+.nav-link{
+    float: right;
+
 }
