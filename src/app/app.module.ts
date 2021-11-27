@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
-import {MatToolbarModule} from '@angular/material/toolbar'
-import {MatIconModule} from '@angular/material/icon'
-import {MatListModule} from '@angular/material/list'
-import {MatButtonModule} from '@angular/material/button'
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -34,11 +33,11 @@ import { TesterComponent } from './tester/tester.component';
     WhoWeAreComponent,
     ProjectsComponent,
     JoinUsComponent,
-    ContactUsComponent,
+    ContactUsComponent,    
     FooterComponent,
     TesterComponent,
 
-  ], 
+  ],           
   imports: [ 
     BrowserAnimationsModule,
     HttpClientModule,
