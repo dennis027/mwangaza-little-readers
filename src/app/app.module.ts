@@ -33,14 +33,14 @@ import { TesterComponent } from './tester/tester.component';
     WhoWeAreComponent,
     ProjectsComponent,
     JoinUsComponent,
-    ContactUsComponent,    
+    ContactUsComponent,
     FooterComponent,
     TesterComponent,
 
   ],           
   imports: [ 
     BrowserAnimationsModule,
-    HttpClientModule,
+    HttpClientModule,  
     BrowserModule,
     AppRoutingModule,
     MatTabsModule,
@@ -65,6 +65,7 @@ import { TesterComponent } from './tester/tester.component';
   ],
  
   providers: [], 
-  bootstrap: [AppComponent] 
+  bootstrap: [AppComponent]          
+
 })
 export class AppModule { }

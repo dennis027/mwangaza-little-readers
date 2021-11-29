@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
 .background{
     background-image: url("https://kidspalace.co.ke/gallery/images/kp20.jpg");
     background-repeat: no-repeat;
@@ -14,4 +15,17 @@
     overflow: hidden;
     height: 100%;
     z-index: 2;
+}
+
+.vertical {
+    border-left: 6px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%;
+}
+.mission, .vision{
+    font-family: 'Architects Daughter', cursive;
+font-family: 'Courgette', cursive;
+text-align: center;
+
 }
