@@ -29,3 +29,39 @@ font-family: 'Courgette', cursive;
 text-align: center;
 
 }
+
+.log{
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+}
+.log img{
+    width: 20%;
+    height: auto;
+}
+
+hr.new5 {
+    border: 10px solid green;
+    border-radius: 5px;
+    width: 00%;
+  }
+
+  h4 {
+    display: flex;
+    flex-direction: row;
+}
+  
+h4:before,
+h4:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+  
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
