@@ -6,7 +6,7 @@
       <mat-toolbar-row>
       
         <span><a href="/"><img class="logo" id="logo" src="../assets/photos/mwangazalogo2.png" alt=""> </a> </span>
-        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm style="position:fixed; right:10px">
             <div class="container" onclick="myFunction(this)"  >
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -39,16 +39,23 @@
     <mat-sidenav-container fxFlexFill style="height: 100vh;" >
       <mat-sidenav #sidenav  >
         <mat-nav-list  >
-          <a href="#" mat-list-item >
+          <a href="whoweare" mat-list-item >
             <mat-icon></mat-icon>
             About Us
           </a>
           <a href="projects" mat-list-item>
             <mat-icon></mat-icon>
             Projects</a>
-          <a href="joinus" mat-list-item>
-            <mat-icon></mat-icon>
-            Join Us
+          <a mat-list-item>
+            <mat-icon></mat-icon>   
+            <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
           </a>
           <a href="contact" mat-list-item>
             <mat-icon></mat-icon>
