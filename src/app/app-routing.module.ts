@@ -9,6 +9,8 @@ import {ProjectsComponent} from './projects/projects.component'
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import {FooterComponent} from './footer/footer.component';
 import{TesterComponent} from './tester/tester.component';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { LoginComponent } from './auth/login/login.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'navbar',component:NavbarComponent},
@@ -18,6 +20,9 @@ const routes: Routes = [
   {path:'contact',component:ContactUsComponent},
   {path:'footer',component:FooterComponent},
   {path:'test', component:TesterComponent},
+  {path:'sign-in',component:SignUpComponent},
+  {path:'login',component:LoginComponent},
+  
 
 ];
 
