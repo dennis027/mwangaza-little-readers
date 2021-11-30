@@ -11,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatTabsModule } from '@angular/material/tabs';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -24,6 +24,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { TesterComponent } from './tester/tester.component';
 
 
+import { MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -44,10 +45,10 @@ import { TesterComponent } from './tester/tester.component';
     BrowserModule,
     AppRoutingModule,
     MatTabsModule,
-   
+    FlexLayoutModule,
     AppRoutingModule,
     MatToolbarModule,
-   
+    MatSidenavModule,
     MatListModule,
     MatButtonModule,
     MatIconModule,
