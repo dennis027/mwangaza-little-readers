@@ -18,7 +18,7 @@ export class SignUpComponent implements OnInit {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   matcher = new MyErrorStateMatcher();
-  Roles: any = ['Admin', 'Author', 'Reader'];
+  Roles: any = ['Admin', 'Partner', 'Volunteer'];
   constructor() { }
 
   ngOnInit(): void {
