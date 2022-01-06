@@ -57,3 +57,43 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  .b {
+    position: absolute;
+    right: 200px;
+    width: 100px;
+    height: 120px;
+    font-size: 20px;
+  } 
+  .c{
+    position: absolute;
+    right: 300px;
+    width: 100px;
+    height: 120px;
+    font-size: 20px;
+  }
+
+  .d{
+    position: absolute;
+    right: 400px;
+    width: 100px;
+    height: 120px;
+    font-size: 20px;
+  }
+
+  .e{
+    position: absolute;
+    right: 500px;
+    width: 100px;
+    height: 120px;
+    font-size: 20px;
+  }
+
+  .f{
+    position: absolute;
+    right: 10px;
+    width: 100px;
+    height: 120px;
+    font-size: 20px;
+  }

@@ -5,7 +5,7 @@
     <mat-toolbar color="bg-success">
       <mat-toolbar-row>
       
-        <span><a href="/"><img class="logo" id="logo" src="../assets/photos/mwangazalogo2.png" alt=""> </a> </span>
+        <span><a href="/"><img class="logo" id="logo" src="../assets/photos/mwangaza.jpeg" alt="" style="width: 150px;"> </a> </span>
         <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm style="position:fixed; right:10px">
             <div class="container" onclick="myFunction(this)"  >
                 <div class="bar1"></div>
@@ -16,21 +16,25 @@
           
         <div fxShow="true" fxHide.lt-md="true">
           <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-          <a href="whoweare" mat-button>
+          <a href="whoweare" mat-button class="e">
             <mat-icon></mat-icon>
-            who we are
+            <b>About Us</b>
           </a>
-          <a href="projects" mat-button>       
+          <a href="projects" mat-button class="d">       
             <mat-icon></mat-icon>
-            projects
+            <b>Projects</b>
           </a>
-          <a href="sign-in" mat-button>
+          <a href="sign-in" mat-button class="c">
             <mat-icon></mat-icon>
-            Join Us
+            <b>Join Us</b>
           </a>
-          <a href="contact" mat-button>
+          <a href="contact" mat-button class="b">
             <mat-icon></mat-icon>
-            Contacts
+            <b>Contacts</b>
+          </a>
+          <a href="login" mat-button class="f">
+            <mat-icon></mat-icon>
+            <b>Login</b>
           </a>
         </div>
       </mat-toolbar-row>
@@ -38,7 +42,7 @@
     <div >
     <mat-sidenav-container fxFlexFill style="height: 100vh;" >
       <mat-sidenav #sidenav  >
-        <span><a href="/"><img class="logo" id="logo" src="../assets/photos/mwangazalogo2.png" alt=""> </a> </span>
+        
        
         <mat-nav-list  >
           <a href="whoweare" mat-list-item >
@@ -57,6 +61,12 @@
             <mat-icon></mat-icon>
             Contacts
           </a>
+
+          <a href="login" mat-list-item>
+            <mat-icon></mat-icon>
+            Login
+          </a>
+
           <a (click)="sidenav.toggle()" mat-list-item>
             <mat-icon></mat-icon> Close
           </a>

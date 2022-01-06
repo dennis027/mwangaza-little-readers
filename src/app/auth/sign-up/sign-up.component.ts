@@ -19,6 +19,7 @@ export class SignUpComponent implements OnInit {
 
   matcher = new MyErrorStateMatcher();
   Roles: any = ['Admin', 'Partner', 'Volunteer'];
+  hide = true;
   constructor() { }
 
   ngOnInit(): void {
