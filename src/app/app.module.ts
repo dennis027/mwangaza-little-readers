@@ -56,6 +56,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { LoginComponent } from './auth/login/login.component';
+import { AdminComponent } from './admin/admin.component';
+import { PartnerComponent } from './partner/partner.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
 
 
 @NgModule({
@@ -71,6 +74,9 @@ import { LoginComponent } from './auth/login/login.component';
     TesterComponent,
     SignUpComponent,
     LoginComponent,
+    AdminComponent,
+    PartnerComponent,
+    VolunteerComponent,
 
   ],           
   imports: [ 

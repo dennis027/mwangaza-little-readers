@@ -11,6 +11,9 @@ import {FooterComponent} from './footer/footer.component';
 import{TesterComponent} from './tester/tester.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { LoginComponent } from './auth/login/login.component';
+import { AdminComponent } from './admin/admin.component';
+import { PartnerComponent } from './partner/partner.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'navbar',component:NavbarComponent},
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path:'test', component:TesterComponent},
   {path:'sign-in',component:SignUpComponent},
   {path:'login',component:LoginComponent},
+  {path:'admin',component:AdminComponent},
+  {path:'partner',component:PartnerComponent},
+  {path:'volunteer',component:VolunteerComponent}
   
 
 ];
