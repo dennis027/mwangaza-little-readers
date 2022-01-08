@@ -54,6 +54,7 @@ export class SignUpComponent implements OnInit {
         this.isSignUpFailed = false;
         this.router.navigate(['login']);
         console.log(this.form)
+     
       },
       (err) => {
         this.errorMessage = err.error.message;

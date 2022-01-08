@@ -13,14 +13,14 @@
   
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Username" name="username" [(ngModel)]="form.username" #username="ngModel">
+            <input matInput placeholder="Username" name="username" [(ngModel)]="form.username" #username="ngModel" matInput type="text" >
           </mat-form-field>
   
           <mat-form-field class="example-full-width" appearance="fill" style="background-color: white;">
             <mat-label>Email</mat-label>
-            <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+            <input type="email" matInput [errorStateMatcher]="matcher"
                    placeholder="Ex. mwangaza@example.com"  name="email" [(ngModel)]="form.email" required
-                   email  >
+                   email #email="ngModel" >
             <mat-hint>Errors appear instantly!</mat-hint>
             <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
               Please enter a valid email address
@@ -31,10 +31,18 @@
           </mat-form-field>
   
           <mat-form-field class="example-full-width" >
-            <input matInput placeholder="Phonenumber" matInput type="text"  minlength="13" maxlength="13" placeholder="phone" name="phone"
+            <input matInput placeholder="Phonenumber" matInput type="number" name="phone"
             [(ngModel)]="form.phone" required phone #phone="ngModel" >
-            
           </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Choose a role...</mat-label>
+            <mat-select>
+              <mat-option [value]="roles" *ngFor="let roles of Roles">{{roles}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
           <mat-form-field class="example-full-width" >
             <input matInput placeholder="Password" matInput type="password" name="password" [(ngModel)]="form.password"
             required minlength="6" #password="ngModel">
@@ -45,17 +53,11 @@
             <input matInput placeholder="Confirm Password" matInput type="password">
           </mat-form-field>
   
-          <!-- <mat-form-field class="example-full-width">
-            <mat-label>Choose a role...</mat-label>
-            <mat-select>
-              <mat-option [value]="roles" *ngFor="let roles of Roles">{{roles}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field> -->
+      
   
         </mat-card-content>
   
-        <button class="btn btn-info my-4 btn-block" type="submit">Sign Up</button>
+        <button mat-stroked-button color="accent" class="btn-block" matInput type="submit">Sign Up</button>
   
       </form>
       Already have an account? <a href="login">Login</a>
