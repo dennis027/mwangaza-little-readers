@@ -11,12 +11,14 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
   }
 }
+
 @Component({
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css']
+  selector: 'app-volunteer-signin',
+  templateUrl: './volunteer-signin.component.html',
+  styleUrls: ['./volunteer-signin.component.css']
 })
-export class SignUpComponent implements OnInit {
+export class VolunteerSigninComponent implements OnInit {
+
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   matcher = new MyErrorStateMatcher();
@@ -47,7 +49,7 @@ export class SignUpComponent implements OnInit {
       this.form;
       console.log(this.form)
 
-    this.authService.register(username, email, phone, role="is_partner", password).subscribe(
+    this.authService.register(username, email, phone, role="is_volunteer", password).subscribe(
       (data) => {
         console.log(data);
         this.isSuccessful = true;

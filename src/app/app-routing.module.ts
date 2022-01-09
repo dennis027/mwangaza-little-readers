@@ -14,6 +14,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { PartnerComponent } from './partner/partner.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
+import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-signin.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'navbar',component:NavbarComponent},
@@ -27,8 +28,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'admin',component:AdminComponent},
   {path:'partner',component:PartnerComponent},
-  {path:'volunteer',component:VolunteerComponent}
-  
+  {path:'volunteer',component:VolunteerComponent},
+  {path:'signin',component:VolunteerSigninComponent}
 
 ];
 

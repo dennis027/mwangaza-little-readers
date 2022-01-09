@@ -59,6 +59,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { PartnerComponent } from './partner/partner.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
+import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-signin.component';
 
 
 @NgModule({
@@ -77,6 +78,7 @@ import { VolunteerComponent } from './volunteer/volunteer.component';
     AdminComponent,
     PartnerComponent,
     VolunteerComponent,
+    VolunteerSigninComponent,
 
   ],           
   imports: [ 

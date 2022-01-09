@@ -6,7 +6,7 @@
       <mat-card-header>
         <img class="hel" src="../assets/photos/mwangaza.jpeg" alt="" width="100%">
         
-        <mat-card-title>Register</mat-card-title>
+        <mat-card-title>Partner Register</mat-card-title>
       </mat-card-header>
   
       <form class="example-form" *ngIf="!isSuccessful" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
@@ -33,14 +33,6 @@
           <mat-form-field class="example-full-width" >
             <input matInput placeholder="Phonenumber" matInput type="number" name="phone"
             [(ngModel)]="form.phone" required phone #phone="ngModel" >
-          </mat-form-field>
-
-          <mat-form-field class="example-full-width">
-            <mat-label>Choose a role...</mat-label>
-            <mat-select>
-              <mat-option [value]="roles" *ngFor="let roles of Roles">{{roles}}
-              </mat-option>
-            </mat-select>
           </mat-form-field>
 
           <mat-form-field class="example-full-width" >

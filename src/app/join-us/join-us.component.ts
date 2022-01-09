@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatButtonToggleChange } from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-join-us',
@@ -6,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./join-us.component.css']
 })
 export class JoinUsComponent implements OnInit {
+  toggle: boolean = true;
+  constructor() {}
 
-  constructor() { }
+  toggleView(change: MatButtonToggleChange) {
+     this.toggle = change.value;
+  }
+
+  
 
   ngOnInit(): void {
   }
