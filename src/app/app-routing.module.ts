@@ -16,7 +16,7 @@ import { PartnerComponent } from './partner/partner.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
 import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-signin.component';
 const routes: Routes = [
-  {path:'',component:LandingComponent},
+  {path:'home',component:LandingComponent},
   {path:'navbar',component:NavbarComponent},
   {path:'whoweare',component:WhoWeAreComponent},
   {path:'joinus',component:JoinUsComponent} ,
