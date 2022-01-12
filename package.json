@@ -33,6 +33,7 @@
     "cors-anywhere": "^0.4.4",
     "google-maps-ng2": "^1.0.10",
     "ngx-google-places-autocomplete": "^2.0.5",
+    "ngx-spinner": "^13.0.0",
     "ngx-toastr": "^14.1.0",
     "popper": "^1.0.1",
     "rxjs": "~6.6.0",

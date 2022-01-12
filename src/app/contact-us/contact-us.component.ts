@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactService } from '../service/contact.service';
+import { Router } from '@angular/router';
 
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {FormBuilder,FormGroup,} from '@angular/forms';
@@ -20,10 +22,25 @@ export class ContactUsComponent implements OnInit {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   matcher = new MyErrorStateMatcher();
-
-  constructor() { }
+ form:any = {
+   name:null,
+   email:null,
+   subject:null,
+   message:null
+ }
+  constructor(private contactService:ContactService,private router:Router) { }
 
   ngOnInit(): void {
   }
-
+  onSubmit(): void{
+    let {name,email,subject,message}= this.form;
+    this.contactService.post(name,email,subject,message).subscribe(
+      (data) => {
+        console.log(data)
+      },
+      (err) => {
+       console.log(err)
+      }
+    )
+  }
 }

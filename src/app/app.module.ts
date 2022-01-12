@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -59,7 +60,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { PartnerComponent } from './partner/partner.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
-import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-signin.component';
+import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-signin.component';  
+import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 
 @NgModule({
@@ -79,6 +81,7 @@ import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-sign
     PartnerComponent,
     VolunteerComponent,
     VolunteerSigninComponent,
+    ContactInfoComponent,
 
   ],           
   imports: [ 
@@ -129,7 +132,9 @@ import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-sign
     MatGridListModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
   exports: [
