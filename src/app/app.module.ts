@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgProgressModule } from '@ngx-progressbar/core';
-import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -133,8 +132,7 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
     MatRadioModule,
     MatDatepickerModule,
     MatTooltipModule,
-    NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+
   ],
   schemas: [NO_ERRORS_SCHEMA],
   exports: [
