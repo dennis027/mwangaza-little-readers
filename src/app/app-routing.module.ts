@@ -15,6 +15,8 @@ import { AdminComponent } from './admin/admin.component';
 import { PartnerComponent } from './partner/partner.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
 import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-signin.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PartnerFormComponent } from './partner-form/partner-form.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'home',component:LandingComponent},
@@ -30,8 +32,9 @@ const routes: Routes = [
   {path:'admin',component:AdminComponent},
   {path:'partner',component:PartnerComponent},
   {path:'volunteer',component:VolunteerComponent},
-  {path:'signin',component:VolunteerSigninComponent}
-
+  {path:'signin',component:VolunteerSigninComponent},
+  {path:'partner-form',component:PartnerFormComponent},
+  { path:'**', component:NotFoundComponent},
 ];
 
 @NgModule({
