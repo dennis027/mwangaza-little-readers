@@ -63,6 +63,7 @@ import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-sign
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PartnerFormComponent } from './partner-form/partner-form.component';
+import { VolunteerFormComponent } from './volunteer-form/volunteer-form.component';
 
 
 @NgModule({
@@ -85,6 +86,7 @@ import { PartnerFormComponent } from './partner-form/partner-form.component';
     ContactInfoComponent,
     NotFoundComponent,
     PartnerFormComponent,
+    VolunteerFormComponent,
 
   ],           
   imports: [ 

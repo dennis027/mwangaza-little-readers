@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { ContactInfoComponent } from '../contact-info/contact-info.component';
+import { PartnerFormComponent } from '../partner-form/partner-form.component';
+import { VolunteerFormComponent } from '../volunteer-form/volunteer-form.component';
 
-export interface DialogData {
-  animal: string;
-  name: string;
-}
+
+
 @Component({
   selector: 'app-tester',
   templateUrl: './tester.component.html',
@@ -13,8 +13,8 @@ export interface DialogData {
 })
 export class TesterComponent implements OnInit {
   
-  animal: string;
-  name: string;
+  // animal: string;
+  // name: string;
 
   constructor(public dialog: MatDialog) {}
   ngOnInit(): void {
@@ -22,14 +22,14 @@ export class TesterComponent implements OnInit {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open( ContactInfoComponent , {
-      width: '80%',
-      data: {name: this.name, animal: this.animal},
+    const dialogRef = this.dialog.open( VolunteerFormComponent , {
+      width: '100%',
+      // data: {name: this.name, animal: this.animal},
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.animal = result;
+      // this.animal = result;
     });
   }
 }
