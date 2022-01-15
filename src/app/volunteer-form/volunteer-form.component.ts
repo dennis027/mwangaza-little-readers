@@ -36,4 +36,7 @@ form:any = {
       }
     )
   }
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 }

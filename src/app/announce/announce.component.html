@@ -15,6 +15,10 @@
 <mat-form-field class="example-full-width">
 <input matInput placeholder="Message to Mwangaza" name="message" [(ngModel)]="form.message" #message="ngModel" matInput type="text" >
 </mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="location" name="location" [(ngModel)]="form.location" #location="ngModel" matInput type="text" >
+    </mat-form-field>
  <br>
 <mat-form-field class="example-full-width">
     <input matInput placeholder="Date" name="date" [(ngModel)]="form.date" #message="ngModel" matInput type="date" >
@@ -24,5 +28,6 @@
   <br>
 
   <button mat-stroked-button color="accent" class="btn-block" matInput type="submit">Send Message</button>
+
   <button mat-button (click)="onNoClick()">No Thanks</button>
 </form>

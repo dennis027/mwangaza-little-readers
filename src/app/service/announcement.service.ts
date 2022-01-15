@@ -21,4 +21,10 @@ export class AnnouncementService {
       user,subject,message,location,date
     },httpOptions)
   }
+  update(user:string,subject:string,message:string,location:string,date:Date):Observable<any>{
+    return this.httpClient.put(api1+'announcement/',{
+      user,subject,message,location,date
+    },httpOptions)
+  }
+
 }

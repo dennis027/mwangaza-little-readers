@@ -18,6 +18,7 @@ import { VolunteerSigninComponent } from './auth/volunteer-signin/volunteer-sign
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PartnerFormComponent } from './partner-form/partner-form.component';
 import { VolunteerFormComponent } from './volunteer-form/volunteer-form.component';
+import { AnnounceComponent } from './announce/announce.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'home',component:LandingComponent},
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path:'signin',component:VolunteerSigninComponent},
   {path:'partner-form',component:PartnerFormComponent},
   {path:'vform', component:VolunteerFormComponent},
+  {path:'announce',component:AnnounceComponent},
   { path:'**', component:NotFoundComponent},
 ];
 

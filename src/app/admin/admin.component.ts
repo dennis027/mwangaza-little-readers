@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../service/contact.service';
 import {PartnerInfoService} from '../service/partner-info.service'
 import { VolunteerInfoService } from '../service/volunteer-info.service';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { AnnounceComponent } from '../announce/announce.component';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -21,7 +23,7 @@ export class AdminComponent implements OnInit {
   users!: any[];
   allUsers:any;
   volunteers:any;
-  constructor(private contactService:ContactService , private partnerInfoService:PartnerInfoService , private volunteerInfoService:VolunteerInfoService) { }
+  constructor(private contactService:ContactService , private partnerInfoService:PartnerInfoService , private volunteerInfoService:VolunteerInfoService,public dialog: MatDialog) { }
 
   ngOnInit(): void {
 
@@ -43,6 +45,17 @@ export class AdminComponent implements OnInit {
     })
 
 
+  }
+  openDialog(): void {
+    const dialogRef = this.dialog.open( AnnounceComponent , {
+      width: '350px',
+      // data: {name: this.name, animal: this.animal},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // this.animal = result;
+    });
   }
 
 }
