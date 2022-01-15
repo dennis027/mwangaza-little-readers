@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import {AnnouncementService} from '../service/announcement.service'
 import { TesterComponent } from '../tester/tester.component';
 @Component({
@@ -18,7 +19,7 @@ export class AnnounceComponent implements OnInit {
   location:null,
   date:null,
  }
-  constructor(private router:Router,private annnouncementService:AnnouncementService,public dialogRef: MatDialogRef<TesterComponent>) { }
+  constructor(private router:Router,private annnouncementService:AnnouncementService,public dialogRef: MatDialogRef<TesterComponent>,private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.username = localStorage.getItem('username')
@@ -30,10 +31,13 @@ export class AnnounceComponent implements OnInit {
     this.annnouncementService.post(user=this.user_id,subject,message,location,date).subscribe(
       (data) =>{
         console.log(data)
+        this.toastr.success('Announcement submitted Successfully');
       },(err) => {
         console.log(err)
+        this.toastr.error('Check Your Details ');
       }
-    )
+      );
+      this.dialogRef.close();
   }
   onNoClick(): void {
     this.dialogRef.close();

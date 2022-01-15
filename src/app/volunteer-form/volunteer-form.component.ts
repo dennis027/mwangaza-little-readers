@@ -4,6 +4,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 import { DialogData } from '../contact-info/contact-info.component';
 import { VolunteerInfoService } from '../service/volunteer-info.service';
 import { TesterComponent } from '../tester/tester.component';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-volunteer-form',
   templateUrl: './volunteer-form.component.html',
@@ -19,7 +20,7 @@ form:any = {
   date:null,
 }
   constructor(private volunteerInfoService:VolunteerInfoService, public dialogRef: MatDialogRef<TesterComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData,) { }
+    @Inject(MAT_DIALOG_DATA) public data: DialogData,private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.username = localStorage.getItem('username'),
@@ -30,11 +31,14 @@ form:any = {
     this.volunteerInfoService.post (name=this.user_id,subject,message,date).subscribe(
       (data)=>{
         console.log(data)
+        this.toastr.success('Forms submitted Successfully');
       },
       (err) => {
         console.log(err)
+        this.toastr.error('Check Your Details');
       }
-    )
+      );
+      this.dialogRef.close();
   }
   onNoClick(): void {
     this.dialogRef.close();
