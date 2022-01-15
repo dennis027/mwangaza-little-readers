@@ -1,11 +1,10 @@
-
+<h3>Partner Forms Input</h3>
  <form class="example-form"  name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" class="text-center">
   
  
     <mat-form-field class="example-full-width">
       <input matInput placeholder="{{username}}" name="name" [(ngModel)]="form.name" #name="ngModel" matInput type="text" readonly value="{{user_id}}">
     </mat-form-field>
-<br>
 
 <br>
 <mat-form-field class="example-full-width">

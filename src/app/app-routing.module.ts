@@ -19,6 +19,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PartnerFormComponent } from './partner-form/partner-form.component';
 import { VolunteerFormComponent } from './volunteer-form/volunteer-form.component';
 import { AnnounceComponent } from './announce/announce.component';
+import { NotifyComponent } from './notify/notify.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'home',component:LandingComponent},
@@ -38,6 +39,7 @@ const routes: Routes = [
   {path:'partner-form',component:PartnerFormComponent},
   {path:'vform', component:VolunteerFormComponent},
   {path:'announce',component:AnnounceComponent},
+  {path:'notify',component:NotifyComponent},
   { path:'**', component:NotFoundComponent},
 ];
 

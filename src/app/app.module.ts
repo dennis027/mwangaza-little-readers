@@ -43,7 +43,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
-
+import { ToastrModule } from 'ngx-toastr'; 
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
@@ -65,6 +65,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PartnerFormComponent } from './partner-form/partner-form.component';
 import { VolunteerFormComponent } from './volunteer-form/volunteer-form.component';
 import { AnnounceComponent } from './announce/announce.component';
+import { NotifyComponent } from './notify/notify.component';
+
 
 
 @NgModule({
@@ -89,6 +91,7 @@ import { AnnounceComponent } from './announce/announce.component';
     PartnerFormComponent,
     VolunteerFormComponent,
     AnnounceComponent,
+    NotifyComponent,
 
   ],           
   imports: [ 
@@ -140,7 +143,7 @@ import { AnnounceComponent } from './announce/announce.component';
     MatRadioModule,
     MatDatepickerModule,
     MatTooltipModule,
-
+    ToastrModule.forRoot()
   ],
   schemas: [NO_ERRORS_SCHEMA],
   exports: [

@@ -13,7 +13,7 @@
   "dependencies": {
     "@agm/core": "^1.1.0",
     "@angular-material-extensions/google-maps-autocomplete": "^6.2.2",
-    "@angular/animations": "~11.2.12",
+    "@angular/animations": "^11.2.14",
     "@angular/cdk": "^11.2.13",
     "@angular/common": "~11.2.12",
     "@angular/compiler": "~11.2.12",
@@ -34,7 +34,7 @@
     "google-maps-ng2": "^1.0.10",
     "ngx-google-places-autocomplete": "^2.0.5",
     "ngx-spinner": "^13.0.0",
-    "ngx-toastr": "^14.1.0",
+    "ngx-toastr": "^10.0.4",
     "popper": "^1.0.1",
     "rxjs": "~6.6.0",
     "rxjs-compat": "^6.6.7",

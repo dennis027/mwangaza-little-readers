@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/service/auth.service';
+import { NotificationService } from 'src/app/service/notification.service';
 import { TokenStorageService } from 'src/app/service/token-storage-service.service';
 
 @Component({
@@ -10,7 +12,7 @@ import { TokenStorageService } from 'src/app/service/token-storage-service.servi
 })
 export class LoginComponent implements OnInit {
 
-
+  title = 'toaster-not';
   form;
   isLoggedIn = false;
   isLoginFailed = false;
@@ -18,7 +20,7 @@ export class LoginComponent implements OnInit {
   roles: string[] = [];
 
   constructor(private authService: AuthService, private router: Router,
-    private tokenStorage: TokenStorageService) { }
+    private tokenStorage: TokenStorageService,private notifyService : NotificationService,private toastr: ToastrService) { }
 
   ngOnInit(): void {
     if (this.tokenStorage.getToken()) {
@@ -50,9 +52,10 @@ export class LoginComponent implements OnInit {
       else{
         this.router.navigate(['volunteer']);
       }
+      this.toastr.success('Logged in successfully.Welcome to Mwangaza Readers.');
 
     }, error => {
-     
+      this.toastr.error('Kindly provide the correct credentials');
     })
    
   }

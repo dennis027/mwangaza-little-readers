@@ -1,0 +1,21 @@
+<h3>Admin Messages</h3>
+    <table>
+        <thead>
+        <tr>
+          <th>Location</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let user of announces' >
+
+            <td>{{user.location}}</td>
+            <td>{{user.subject}}</td>
+            <td>{{user.message}}</td>
+            <td>{{user.date}}</td>
+          </tr>
+
+        </tbody>
+      </table>

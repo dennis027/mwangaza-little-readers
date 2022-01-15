@@ -3,6 +3,7 @@ import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/form
 import {FormBuilder,FormGroup,} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/service/auth.service';
 /** Error when invalid control is dirty, touched, or submitted. */
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -36,7 +37,7 @@ export class SignUpComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private router: Router,
-   
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -54,11 +55,12 @@ export class SignUpComponent implements OnInit {
         this.isSignUpFailed = false;
         this.router.navigate(['login']);
         console.log(this.form)
-     
+        this.toastr.success('Sign-Up Successfully');
       },
       (err) => {
         this.errorMessage = err.error.message;
         this.isSignUpFailed = true;
+        this.toastr.error('Kindly Check details provided');
       } 
     );
   }
