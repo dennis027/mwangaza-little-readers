@@ -67,6 +67,7 @@ import { VolunteerFormComponent } from './volunteer-form/volunteer-form.componen
 import { AnnounceComponent } from './announce/announce.component';
 import { NotifyComponent } from './notify/notify.component';
 
+// import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 @NgModule({
@@ -143,7 +144,8 @@ import { NotifyComponent } from './notify/notify.component';
     MatRadioModule,
     MatDatepickerModule,
     MatTooltipModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    // MatCarouselModule.forRoot(),
   ],
   schemas: [NO_ERRORS_SCHEMA],
   exports: [
