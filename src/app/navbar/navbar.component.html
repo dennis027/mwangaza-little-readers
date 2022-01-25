@@ -14,22 +14,26 @@
           
         <div fxShow="true" fxHide.lt-md="true" style="padding: 300px;"  >
           <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-          <a href="whoweare" mat-button class="e">
-            <mat-icon></mat-icon>
-            <b>About Us</b>
-          </a>
+        
+            <button mat-button [matMenuTriggerFor]="menu" class="e"><b>About Us</b></button>
+            <mat-menu #menu="matMenu">
+              <a href="whoweare">  <button mat-menu-item>Who we are</button></a>
+            
+              <button mat-menu-item>Partners</button>
+            </mat-menu>
+        
           <a href="projects" mat-button class="d">       
             <mat-icon></mat-icon>
             <b>Projects</b>
           </a>
           <a href="joinus" mat-button class="c">
-            <mat-icon></mat-icon>
+            <mat-icon></mat-icon> 
             <b>Join Us</b>
           </a>
           <a href="contact" mat-button class="b">
             <mat-icon></mat-icon>
             <b>Contacts</b>
-          </a>
+          </a>  
           <a href="login" mat-button class="f">
             <mat-icon></mat-icon>
             <b>Login</b>

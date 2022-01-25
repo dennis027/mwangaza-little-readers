@@ -4,3 +4,5 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 /* for sidenav to take a whole page */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
