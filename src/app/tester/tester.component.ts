@@ -6,7 +6,6 @@ import { NotificationService } from '../service/notification.service';
 import { VolunteerFormComponent } from '../volunteer-form/volunteer-form.component';
 import { ToastrService } from 'ngx-toastr';
 
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-tester',
@@ -15,19 +14,9 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class TesterComponent implements OnInit {
   
-  title = 'ng-carousel-demo';
-  
-  images = [
-    {title: 'First Slide', short: 'First Slide Short', src: "https://picsum.photos/id/700/900/500"},
-    {title: 'Second Slide', short: 'Second Slide Short', src: "https://picsum.photos/id/1011/900/500"},
-    {title: 'Third Slide', short: 'Third Slide Short', src: "https://picsum.photos/id/984/900/500"}
-  ];
+  title = 'toaster-not';
 
-  constructor(public dialog: MatDialog,private notifyService : NotificationService,config: NgbCarouselConfig) {
-    config.interval = 2000;
-    config.keyboard = true;
-    config.pauseOnHover = true;
-  }
+  constructor(public dialog: MatDialog,private notifyService : NotificationService) {}
   showToasterSuccess(){
     this.notifyService.showSuccess("Data shown successfully !!", "ItSolutionStuff.com")
 }

@@ -247,3 +247,9 @@ body {
   input.example-right-align {
     -moz-appearance: textfield;
   }
+
+
+  .box{
+    width: 1000px;
+   height: 100px; 
+  }

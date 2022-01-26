@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../service/contact.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {FormBuilder,FormGroup,} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
@@ -30,7 +30,7 @@ export class ContactUsComponent implements OnInit {
    subject:null,
    message:null
  }
-  constructor(private contactService:ContactService,private router:Router,private toastr: ToastrService ) { }
+  constructor(private contactService:ContactService,private router:Router,private toastr: ToastrService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -40,12 +40,13 @@ export class ContactUsComponent implements OnInit {
       (data) => {
         console.log(data)
         this.toastr.success('Mwangaza Little Readers Received Your Message');
+      this.router.navigate (['contact'])
+       
       },
       (err) => {
        console.log(err)
        this.toastr.error('Check Your Details ');
       });
-      window.location.reload();
       // );
       // this.dialogRef.close();
   }

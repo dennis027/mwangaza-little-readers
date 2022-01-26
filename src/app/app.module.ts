@@ -67,7 +67,7 @@ import { VolunteerFormComponent } from './volunteer-form/volunteer-form.componen
 import { AnnounceComponent } from './announce/announce.component';
 import { NotifyComponent } from './notify/notify.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
@@ -149,7 +149,9 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatCarouselModule.forRoot(),
     BrowserAnimationsModule, 
     NgbModule,
+    NgImageSliderModule,
     
+
   ],
   schemas: [NO_ERRORS_SCHEMA],
   exports: [
