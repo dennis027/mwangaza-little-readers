@@ -66,7 +66,7 @@ import { PartnerFormComponent } from './partner-form/partner-form.component';
 import { VolunteerFormComponent } from './volunteer-form/volunteer-form.component';
 import { AnnounceComponent } from './announce/announce.component';
 import { NotifyComponent } from './notify/notify.component';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
+// import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 
@@ -146,11 +146,11 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatDatepickerModule,
     MatTooltipModule,
     ToastrModule.forRoot(),
-    MatCarouselModule.forRoot(),
+    // MatCarouselModule.forRoot(),
     BrowserAnimationsModule, 
     NgbModule,
     NgImageSliderModule,
-    
+
 
   ],
   schemas: [NO_ERRORS_SCHEMA],
