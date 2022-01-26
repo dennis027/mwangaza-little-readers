@@ -96,3 +96,7 @@
     font-size: larger;
 }
 
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}

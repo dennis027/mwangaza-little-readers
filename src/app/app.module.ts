@@ -38,7 +38,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { MatInputModule } from '@angular/material/input';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -148,6 +148,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     ToastrModule.forRoot(),
     MatCarouselModule.forRoot(),
     BrowserAnimationsModule, 
+    NgbModule,
+    
   ],
   schemas: [NO_ERRORS_SCHEMA],
   exports: [
