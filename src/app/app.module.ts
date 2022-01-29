@@ -68,6 +68,8 @@ import { AnnounceComponent } from './announce/announce.component';
 import { NotifyComponent } from './notify/notify.component';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { ProgressSpinnerDialogComponent } from './progress-spinner-dialog/progress-spinner-dialog.component';
+import { DonateComponent } from './donate/donate.component';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
@@ -94,6 +96,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     VolunteerFormComponent,
     AnnounceComponent,
     NotifyComponent,
+    ProgressSpinnerDialogComponent,
+    DonateComponent,
 
   ],           
   imports: [ 

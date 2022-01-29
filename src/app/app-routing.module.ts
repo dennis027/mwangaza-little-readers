@@ -20,6 +20,7 @@ import { PartnerFormComponent } from './partner-form/partner-form.component';
 import { VolunteerFormComponent } from './volunteer-form/volunteer-form.component';
 import { AnnounceComponent } from './announce/announce.component';
 import { NotifyComponent } from './notify/notify.component';
+import { DonateComponent } from './donate/donate.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'home',component:LandingComponent},
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path:'vform', component:VolunteerFormComponent},
   {path:'announce',component:AnnounceComponent},
   {path:'notify',component:NotifyComponent},
+  {path:'donate',component:DonateComponent},
   { path:'**', component:NotFoundComponent},
 ];
 

@@ -4,7 +4,6 @@ import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/service/auth.service';
 import { NotificationService } from 'src/app/service/notification.service';
 import { TokenStorageService } from 'src/app/service/token-storage-service.service';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -20,7 +19,9 @@ export class LoginComponent implements OnInit {
   roles: string[] = [];
 
   constructor(private authService: AuthService, private router: Router,
-    private tokenStorage: TokenStorageService,private notifyService : NotificationService,private toastr: ToastrService) { }
+    private tokenStorage: TokenStorageService,private notifyService : NotificationService,private toastr: ToastrService) { 
+
+    }
 
   ngOnInit(): void {
     if (this.tokenStorage.getToken()) {
