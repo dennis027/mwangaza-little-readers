@@ -71,7 +71,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { ProgressSpinnerDialogComponent } from './progress-spinner-dialog/progress-spinner-dialog.component';
 import { DonateComponent } from './donate/donate.component';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
-
+import {NgxLoaderModule} from '@binssoft/ngx-loader';
 
 @NgModule({
   declarations: [
@@ -154,6 +154,7 @@ import { DonateComponent } from './donate/donate.component';
     BrowserAnimationsModule, 
     NgbModule,
     NgImageSliderModule,
+    NgxLoaderModule,
 
 
   ],

@@ -4,6 +4,8 @@ import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/service/auth.service';
 import { NotificationService } from 'src/app/service/notification.service';
 import { TokenStorageService } from 'src/app/service/token-storage-service.service';
+import {NgxLoaderService} from '@binssoft/ngx-loader'
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -18,8 +20,22 @@ export class LoginComponent implements OnInit {
   errorMessage = '';
   roles: string[] = [];
 
+  loaderConfig:any ={
+    theme:{
+      back:'rgb(181 24 51 / 0.5)',
+      spinner:'#184db5'
+    },
+    type:'ring', //bar, ring, bubble-spinner, square, bounce,cube
+}
+
+
   constructor(private authService: AuthService, private router: Router,
-    private tokenStorage: TokenStorageService,private notifyService : NotificationService,private toastr: ToastrService) { 
+    private tokenStorage: TokenStorageService,private notifyService : NotificationService,private toastr: ToastrService,private loaderService: NgxLoaderService,  private http : HttpClient) { 
+      this.loaderService.skipMap([
+        'albums'
+      ]);
+      this.http.get('https://example.com/comments').subscribe((res:any)=>{})
+      this.http.get('https://example.com/albums').subscribe((res:any)=>{})
 
     }
 
