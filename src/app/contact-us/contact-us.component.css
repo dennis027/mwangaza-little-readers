@@ -282,3 +282,8 @@ body {
     width: 1000px;
    height: 100px; 
   }
+
+
+  ::ng-deep .mat-form-field-underline {
+    display: none;
+  }
