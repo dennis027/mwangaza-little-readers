@@ -98,3 +98,8 @@
     color:rgb(201, 236, 72);
     margin-bottom:0;
   }
+
+  i{
+    font-size: 300%;
+    padding: 40px;
+  }
