@@ -305,3 +305,11 @@ font-family: 'Roboto Mono', monospace;
 
   font-size: 200%; 
 }
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+
+    height: 90vh;
+} 
