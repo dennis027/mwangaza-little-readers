@@ -75,6 +75,7 @@ import {NgxLoaderModule} from '@binssoft/ngx-loader';
 import { PartnersComponent } from './partners/partners.component';
 import { LilianKabayaComponent } from './lilian-kabaya/lilian-kabaya.component';
 import { WangariKabayaComponent } from './wangari-kabaya/wangari-kabaya.component';
+import { MissionComponent } from './mission/mission.component';
 
 @NgModule({
   declarations: [
@@ -104,6 +105,7 @@ import { WangariKabayaComponent } from './wangari-kabaya/wangari-kabaya.componen
     PartnersComponent,
     LilianKabayaComponent,
     WangariKabayaComponent,
+    MissionComponent,
 
   ],           
   imports: [ 

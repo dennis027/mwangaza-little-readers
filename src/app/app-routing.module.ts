@@ -24,6 +24,7 @@ import { DonateComponent } from './donate/donate.component';
 import { PartnersComponent } from './partners/partners.component';
 import { LilianKabayaComponent } from './lilian-kabaya/lilian-kabaya.component';
 import { WangariKabayaComponent } from './wangari-kabaya/wangari-kabaya.component';
+import { MissionComponent } from './mission/mission.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'home',component:LandingComponent},
@@ -48,6 +49,7 @@ const routes: Routes = [
   {path:'partners', component:PartnersComponent},
   {path:'lilian-kabaya',component:LilianKabayaComponent},
   {path:'wangari-kabaya',component:WangariKabayaComponent},
+  {path:'mission',component:MissionComponent},
   { path:'**', component:NotFoundComponent},
 ];
 
