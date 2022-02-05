@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.background{
+    background-image: url('src/assets/photos/kari.jpeg');
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#one{
+  font-family: 'Satisfy', cursive;
+  color:yellow;
+  font-size: 550%; 
+}
+@media only screen and (max-width: 320px) {
+
+#one { 
+   font-size: 2em; 
+}
+
+}
+@media only screen and (max-width: 500px) {
+
+#one { 
+   font-size: 4em; 
+}
+
+}
+@media only screen and (max-width: 720px) {
+
+#one { 
+   font-size: 3em; 
+}
+
+}
+@media only screen and (max-width: 700px) {
+
+#one { 
+   font-size: 2em; 
+}
+
+
+}
+.over{
+    background: rgba(33, 49, 63, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+#head{
+    font-family: 'Playfair Display', serif;
+}
+
+.img11{
+    width: 90%;
+    height: auto;
+}
