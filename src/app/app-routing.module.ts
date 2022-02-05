@@ -21,6 +21,9 @@ import { VolunteerFormComponent } from './volunteer-form/volunteer-form.componen
 import { AnnounceComponent } from './announce/announce.component';
 import { NotifyComponent } from './notify/notify.component';
 import { DonateComponent } from './donate/donate.component';
+import { PartnersComponent } from './partners/partners.component';
+import { LilianKabayaComponent } from './lilian-kabaya/lilian-kabaya.component';
+import { WangariKabayaComponent } from './wangari-kabaya/wangari-kabaya.component';
 const routes: Routes = [
   {path:'',component:LandingComponent},
   {path:'home',component:LandingComponent},
@@ -42,6 +45,9 @@ const routes: Routes = [
   {path:'announce',component:AnnounceComponent},
   {path:'notify',component:NotifyComponent},
   {path:'donate',component:DonateComponent},
+  {path:'partners', component:PartnersComponent},
+  {path:'lilian-kabaya',component:LilianKabayaComponent},
+  {path:'wangari-kabaya',component:WangariKabayaComponent},
   { path:'**', component:NotFoundComponent},
 ];
 

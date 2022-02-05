@@ -72,6 +72,9 @@ import { ProgressSpinnerDialogComponent } from './progress-spinner-dialog/progre
 import { DonateComponent } from './donate/donate.component';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 import {NgxLoaderModule} from '@binssoft/ngx-loader';
+import { PartnersComponent } from './partners/partners.component';
+import { LilianKabayaComponent } from './lilian-kabaya/lilian-kabaya.component';
+import { WangariKabayaComponent } from './wangari-kabaya/wangari-kabaya.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +101,9 @@ import {NgxLoaderModule} from '@binssoft/ngx-loader';
     NotifyComponent,
     ProgressSpinnerDialogComponent,
     DonateComponent,
+    PartnersComponent,
+    LilianKabayaComponent,
+    WangariKabayaComponent,
 
   ],           
   imports: [ 

@@ -100,3 +100,8 @@
   background-color: #333;
   overflow: hidden;
 }
+g{
+  position: absolute;
+right: 0;
+}
+

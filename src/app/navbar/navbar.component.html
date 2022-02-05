@@ -34,18 +34,22 @@
             <b>Mission</b>
           </a>
 
-          <a href="joinus" mat-button class="c">
+          <!-- <a href="joinus" mat-button class="c">
             <mat-icon></mat-icon> 
             <b>Join Us</b>
-          </a>
+          </a> -->
           <a href="contact" mat-button class="b">
             <mat-icon></mat-icon>
             <b>Contacts</b>
           </a>  
-          <a href="login" mat-button class="f">
+          <!-- <a href="login" mat-button class="f">
             <mat-icon></mat-icon>
             <b>Login</b>
-          </a>
+          </a> -->
+          <a href="donate" mat-button class="g" style="background-color: red;    text-align: right !important;">
+            <mat-icon class="white-icon"></mat-icon>
+            <b>Donate</b>
+          </a>  
         </div>
       </mat-toolbar-row>
     </mat-toolbar>
@@ -63,9 +67,9 @@
             <mat-icon></mat-icon>
             Projects</a>
 
-            <a href="joinus" mat-list-item>
+            <!-- <a href="joinus" mat-list-item>
               <mat-icon></mat-icon> 
-              Join Us</a>
+              Join Us</a> -->
           
           <a href="contact" mat-list-item>
             <mat-icon></mat-icon>
@@ -75,11 +79,15 @@
             <mat-icon></mat-icon>
             Mission
           </a>
+          <a href="donate"  mat-list-item style="background-color: red;">
+            <mat-icon></mat-icon>
+            Donate
+          </a>
 
-          <a href="login" mat-list-item>
+          <!-- <a href="login" mat-list-item>
             <mat-icon></mat-icon>
             Login
-          </a>
+          </a> -->
 
           <a (click)="sidenav.toggle()" mat-list-item>
             <mat-icon></mat-icon> Close
