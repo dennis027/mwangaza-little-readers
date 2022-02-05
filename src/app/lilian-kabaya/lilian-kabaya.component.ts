@@ -11,7 +11,7 @@ export interface DialogData {
   styleUrls: ['./lilian-kabaya.component.css']
 })
 export class LilianKabayaComponent implements OnInit {
-
+  panelOpenState = false;
   constructor(
     public dialogRef: MatDialogRef<PartnersComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData,

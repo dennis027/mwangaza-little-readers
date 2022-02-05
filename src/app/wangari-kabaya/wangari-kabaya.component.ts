@@ -12,7 +12,7 @@ export interface DialogData {
   styleUrls: ['./wangari-kabaya.component.css']
 })
 export class WangariKabayaComponent implements OnInit {
-
+  panelOpenState = false;
   constructor(
     public dialogRef: MatDialogRef<PartnersComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
