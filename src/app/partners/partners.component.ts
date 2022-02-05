@@ -18,7 +18,7 @@ export class PartnersComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
   openDialog(): void {
     const dialogRef = this.dialog.open(LilianKabayaComponent, {
-      width: '250px',
+      width: '75%',
 
     });
 
@@ -29,7 +29,7 @@ export class PartnersComponent implements OnInit {
   }
   openDialog1(): void {
     const dialogRef = this.dialog.open(WangariKabayaComponent, {
-      width: '250px',
+      width: '75%',
 
     });
 
