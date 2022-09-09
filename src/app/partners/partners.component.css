@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+#team{
+    font-size: 400%;
+    
+}
+#info{
+    background-color: #f3f3d7;
+}
+
+
+
+.background{
+    background-image: url('src/assets/photos/lil1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+}
+#one{
+  font-family: 'Satisfy', cursive;
+  color:yellow;
+  font-size: 550%; 
+}
+@media only screen and (max-width: 320px) {
+
+#one { 
+   font-size: 2em; 
+}
+
+}
+@media only screen and (max-width: 500px) {
+
+#one { 
+   font-size: 4em; 
+}
+
+}
+@media only screen and (max-width: 720px) {
+
+#one { 
+   font-size: 3em; 
+}
+
+}
+@media only screen and (max-width: 700px) {
+
+#one { 
+   font-size: 2em; 
+}
+
+
+}
+.over{
+    background: rgba(33, 49, 63, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+#head{
+    font-family: 'Playfair Display', serif;
+}
+
+.card-img{
+    width: 100%;
+}
+
+
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ove{
+      background-color: rgba(244, 246, 216, 0.8);
+      font-size: xx-large;
+      color: rgb(17, 16, 16);
+  }
+
+  .overr{
+    background-color: rgba(244, 246, 216, 0.8);
+    font-size: xx-large;
+    color: rgb(17, 16, 16);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+ 
+  }

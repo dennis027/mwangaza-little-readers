@@ -1,0 +1,20 @@
+
+
+<app-navbar></app-navbar>
+<div class="background"> <br><br>
+    <div class="text-center">
+        <mat-button-toggle-group [value]="toggle" (change)="toggleView($event)" class="text-center">
+            <mat-button-toggle [value]="true">
+                Partner
+            </mat-button-toggle>
+            <mat-button-toggle [value]="false">
+                Volunteer
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        <br><br>
+          <div *ngIf="toggle"><app-sign-up></app-sign-up></div>
+          <div *ngIf="!toggle"><app-volunteer-signin></app-volunteer-signin></div>
+          <br><br>
+    </div>
+
+</div>

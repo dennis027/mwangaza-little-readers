@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Saira+Condensed:wght@200&display=swap');
+#font{
+    font-family: 'Playfair Display', serif;
+font-family: 'Saira Condensed', sans-serif;
+}
+
+.card1{
+    background-color: rgba(244, 246, 216, 0.8) ;
+}
+
+
+
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }

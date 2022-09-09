@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-7">
+            <br><br>
+            <h1 class="text-center">Lilian Kabaya</h1>
+            <br>
+            <h3>Lilian Kabaya is a mastermind and the foundation for Mwangaza Little Readers who are inspired to ensure that young minds are able able to access reading materials with ease.</h3>
+            <h3>Lilian Kabaya saw the need to have the project since young minds from some areas mostly from rural areas are facing problems accessing reading materials which are very essential.</h3>
+            <h3>Lilian Kabaya remains the most committed member of our team and is always ready to answer and give feedback in incase you have a question about the organization.</h3>
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                     (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Contact Her
+                    </mat-panel-title>
+                    <mat-panel-description>
+                     
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                 <h3> Email:lkabaya@gmail.com</h3>
+           
+                </mat-expansion-panel>
+              </mat-accordion>
+        </div>
+        <div class="col-md-5">
+            <img class="size" src="./assets/photos/lilian.jpg" alt="">
+        </div>
+       
+    </div>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Close</button>
+
+  </div>

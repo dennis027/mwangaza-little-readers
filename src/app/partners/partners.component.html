@@ -1,0 +1,99 @@
+<app-navbar></app-navbar>
+<div class="background" >
+    <div class="over">
+       <br><br><br><br><br><br>
+   <h1 class="text-center" id="one" >
+       Our Team
+   </h1>
+   <br><br><br><br><br><br>
+    </div>
+  
+   </div>
+
+<br><br><br><br>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-7">
+            <h1 class="text-center" style="font-size: xx-large;">Meet Our Team</h1>
+            <br>
+            <h3 class="text-center">The Mwangaza Library Team has an amazing team of with staff that tirelessly strive to improve education one book at a time. Our highly-dedicated teams here in Kenya work together to create an organization that positively impacts the lives of underprivileged children. 100% of our program teams are locals. For this reason they understand the challenges that each country holds and are able to provide hundreds of libraries to rural communities annually.</h3>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-7">
+            <h1 class="text-center" style="font-size: xx-large;">How We Do It</h1>
+            <br>
+            <h3 class="text-center">The Mwangaza Team Identifies a school that is in need of either a library or books where partners are able to fundraise and budget.
+                The team also sets a day which most of our team is free which ensures that they are able to motivate students. </h3>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<br><br><br><br>
+
+<div class="container" style="background-color: rgb(172, 228, 210);">
+    <div class="row">
+        <div class="col-md-4">
+            <br><br>
+            <mat-card  (mouseover)="showButton = true" (mouseleave)="showButton = false" >
+                <mat-card-title><h1>Lilian Kabaya</h1></mat-card-title>
+                <mat-card-content></mat-card-content>
+                <mat-card-image><img src="./assets/photos/lilian.jpg" alt="" class="card-img"></mat-card-image>
+                <mat-card-actions>
+                  
+                    <div class="centered" *ngIf = "showButton" ><h3 class="ove">Founder && Senior Partner<br></h3></div>
+                </mat-card-actions>
+                <mat-card-footer>
+                        
+                </mat-card-footer>
+            </mat-card>
+            <br>
+            <h1>Founder &&Senior Parter</h1>
+            <button class="text-center" mat-raised-button (click)="openDialog()">Learn More</button>
+            <br><br>
+        </div>
+        <div class="col-md-4">
+            <br><br>
+            <mat-card  (mouseover)="showDiv = true" (mouseleave)="showDiv = false" >
+                <mat-card-title><h1>Wangari Kabaya</h1></mat-card-title>
+                <mat-card-content></mat-card-content>
+                <mat-card-image><img src="./assets/photos/kari.jpg" alt="" class="card-img"></mat-card-image> <br>
+                <mat-card-actions>
+                    <div class="centered" *ngIf = "showDiv" ><h3 class="overr">Senior Trustee<br></h3></div>
+                </mat-card-actions> 
+                <mat-card-footer>
+                  
+
+                </mat-card-footer>
+            </mat-card>
+            <br>
+            <h1>Senior Trustee</h1>
+            <button class="center" mat-raised-button (click)="openDialog1()">Learn more</button>
+            <br><br>
+        </div>
+        <!-- <div class="col-md-4">
+            <br><br>
+            <mat-card>
+                <mat-card-title></mat-card-title>
+                <mat-card-content></mat-card-content>
+                <mat-card-image></mat-card-image>
+                <mat-card-actions></mat-card-actions>
+            </mat-card>
+            <br><br>
+        </div> -->
+    </div>
+</div>
+
+
+<br>
+<div class=footer>
+    <app-footer></app-footer>
+</div>

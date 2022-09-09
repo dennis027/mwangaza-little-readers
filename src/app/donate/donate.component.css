@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600;700&family=Roboto+Mono:wght@200&display=swap');
+
+.background {
+    background-image: url('src/assets/photos/lil3.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    background-size: cover;
+    position: relative;
+  
+    height: auto;
+}
+
+.overlay{
+    background: rgba(32, 46, 58, 0.82);
+}
+
+#support{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color:rgb(238, 245, 245);
+    font-size: 550%; 
+  }
+  @media only screen and (max-width: 320px) {
+  
+  #support { 
+     font-size: 4em; 
+  }
+  
+  }
+  @media only screen and (max-width: 500px) {
+  
+  #support { 
+     font-size: 4em; 
+  }
+  
+  }
+  @media only screen and (max-width: 720px) {
+  
+  #support { 
+     font-size: 3em; 
+  }
+  
+  }
+  @media only screen and (max-width: 700px) {
+  
+  #support { 
+     font-size: 2em; 
+  }
+}

@@ -1,0 +1,33 @@
+
+ <form class="example-form"  name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" class="text-center">
+  
+ 
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="{{username}}" name="name" [(ngModel)]="form.name" #name="ngModel" matInput type="text" readonly value="{{user_id}}">
+    </mat-form-field>
+<br>
+
+<br>
+<mat-form-field class="example-full-width">
+<input matInput placeholder="Subject" name="subject" [(ngModel)]="form.subject" #subject="ngModel" matInput type="text" >
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+<input matInput placeholder="Message to Mwangaza" name="message" [(ngModel)]="form.message" #message="ngModel" matInput type="text" >
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="location" name="location" [(ngModel)]="form.location" #location="ngModel" matInput type="text" >
+    </mat-form-field>
+ <br>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Date" name="date" [(ngModel)]="form.date" #message="ngModel" matInput type="date" >
+</mat-form-field>
+   
+
+  <br>
+
+  <button mat-stroked-button color="accent" class="btn-block" matInput type="submit">Send Message</button>
+
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+</form>

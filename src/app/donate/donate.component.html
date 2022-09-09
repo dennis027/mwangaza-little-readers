@@ -1,0 +1,110 @@
+<app-navbar></app-navbar>
+<div class="background">
+    <div class = "overlay">
+        <br><br><br><br><br><br><br><br><br><br> 
+        <h1 class="text-center" id="support"><b>Join The Mwangaza Projects</b></h1>
+        <br><br><br><br><br> 
+        <h2 class="text-center" style="color: white; font-size: 200%;">Thank You For Showing Intrest To Support Children Literacy</h2>
+        <br><br><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <mat-card style="border: 5px solid rgb(43, 40, 216)">
+                        <br>
+                        <mat-card-title class="text-center" style="font-size: xx-large; color: blue;"><b>Donate For Development</b></mat-card-title>
+                        <mat-card-subtitle></mat-card-subtitle>
+                        <br><br><br>
+                        <mat-card-content><h2 class="text-center">Your donation supports the work of The Mwangaza Library Project, ensuring more children have access to quality libraries and resources. Your support gives children in Kenya the chance to empower their lives through literacy.</h2></mat-card-content>
+                        <br><br>
+                        <mat-card-actions class="text-center">   <button mat-flat-button color="primary" style="font-size:xx-large !important">Donate</button></mat-card-actions>
+                        <br><br><br>
+                        <mat-card-footer>
+                            <h3> “It’s not how much we give, but how much love we put into giving.” <i>Mother Teresa</i></h3>
+                        </mat-card-footer>
+                    </mat-card>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <mat-card style="border: 5px solid rgb(216, 213, 40)">
+                        <mat-card-title><h1 class="text-center" style="color: chocolate; font-size: xx-large;"> <b>Join Us as Volunteer</b></h1></mat-card-title>
+                        <mat-card-subtitle></mat-card-subtitle>
+                        <br><br><br>
+                        <mat-card-content><h2 class="text-center"> Become a volunteer at Mwangaza where you will give your time for the roles of Guiding Little Minds, Help Monitor Our Projects, Help maintain and run our current projects</h2></mat-card-content>
+                        <br><br><br><br>
+                         <mat-card-actions class="text-center">  <button mat-stroked-button color="accent" style="font-size:xx-large !important">View Info</button></mat-card-actions>
+                        <mat-card-footer class="text-center"><h3>You will receive updates with news, pictures, and videos regularly of The Mwangaza Library Project in action. We guarantee that our updates will be your favorite emails to stay updated!</h3></mat-card-footer>
+                    </mat-card>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <br><br> <br> <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <mat-card>
+                        <mat-card-title><h1 class="text-center">Mwangaza Donation Methods</h1></mat-card-title>
+                        <mat-card-content>
+                            <mat-accordion>
+                                <mat-expansion-panel hideToggle>
+                                  <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                      You can assist Mwangaza through MPESA
+                                    </mat-panel-title>
+                                    <mat-panel-description>
+                                     <h3>Click for more Info</h3>
+                                  
+                                    </mat-panel-description>
+                                  </mat-expansion-panel-header>
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5">
+                                              <img src="https://www.mobilemoneyafrica.com/media/photos/shares/mpesa.png" alt="" width="100%">
+                                          </div>
+                                          <div class="col-md-7">
+                                              <h1 style="font-size: xx-large;">Paybill No:</h1>
+                                          </div>
+                                      </div>
+                                         
+                                </div>
+                                </mat-expansion-panel>
+                                <br>
+                                <mat-expansion-panel (opened)="panelOpenState = true"
+                                                     (closed)="panelOpenState = false">
+                                  <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                      Donate By Check
+                                    </mat-panel-title>
+                                    <mat-panel-description>
+                                      Check More Info
+                                    </mat-panel-description>
+                                  </mat-expansion-panel-header>
+                                   <div class="container-fluid">
+                                       <div class="row">
+                                           <div class="col-md-5">
+                                               <img src="data:image/jpeg;base64,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" alt="" width="100%">
+                                           </div>
+                                           <div class="col-md-7">
+                                            <h1 >To donate a check please mail to our Kenyan offices</h1>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </mat-expansion-panel>
+                              </mat-accordion>
+                              
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <br><br><br>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</div>
+
+<div class=footer>
+    <app-footer></app-footer>
+</div>
