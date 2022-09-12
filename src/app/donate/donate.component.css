@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600;700&family=Roboto+Mono:wght@200&display=swap');
 
 .background {
-    background-image: url('src/assets/photos/lil3.jpeg');
+    background-image: url('src/assets/photos/mwangaza3.JPG');
     background-repeat: no-repeat;
     background-attachment: fixed;
   
@@ -48,4 +48,7 @@
   #support { 
      font-size: 2em; 
   }
+}
+.mat-card{
+   margin-top: 10px;
 }

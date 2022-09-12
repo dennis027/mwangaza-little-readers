@@ -76,7 +76,8 @@ import { PartnersComponent } from './partners/partners.component';
 import { LilianKabayaComponent } from './lilian-kabaya/lilian-kabaya.component';
 import { WangariKabayaComponent } from './wangari-kabaya/wangari-kabaya.component';
 import { MissionComponent } from './mission/mission.component';
-
+import { LyCarouselModule } from '@alyle/ui/carousel';
+import { LyTypographyModule } from '@alyle/ui/typography';
 
 // Gestures
 import {
@@ -194,7 +195,13 @@ import { MinimaLight, MinimaDark } from '@alyle/ui/themes/minima';
     LyImageCropperModule,
     // ...
     // Gestures
-    HammerModule
+    HammerModule,
+    LyCarouselModule,
+    LyButtonModule,
+ 
+    LyTypographyModule,
+    LyTypographyModule,
+
 
 
   ],

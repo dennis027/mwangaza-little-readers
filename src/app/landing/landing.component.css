@@ -252,7 +252,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 #ham{
-  background-image: url('src/assets/photos/lil2.jpeg');
+  background-image: url('src/assets/photos/mwangaza9.JPG');
   background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -313,3 +313,7 @@ font-family: 'Roboto Mono', monospace;
 
     height: 90vh;
 } 
+.mat-card{
+  margin-right: 10px;
+  margin-top:10px
+}
